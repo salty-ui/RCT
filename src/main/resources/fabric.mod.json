@@ -1,0 +1,28 @@
+{
+	"schemaVersion": 1,
+	"id": "rct-autoclicker",
+	"version": "${version}",
+	"name": "RCT Right-Click Repeater",
+	"description": "Holds right-click for you: while you hold the use-key it repeatedly right-clicks with a random delay you set via /rct <min> <max> (ms).",
+	"authors": [
+		"You"
+	],
+	"contact": {},
+	"license": "CC0-1.0",
+	"icon": "",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"net.rct.autoclicker.RightClickRepeaterClient"
+		]
+	},
+	"mixins": [
+		"rct.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.1",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
